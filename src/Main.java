@@ -18,20 +18,20 @@ public class Main {
             if (a1 < a2 && b2 < b1) {
                 System.out.println("Координаты отрезка пересечения [" + a2 + ";" + b2 + "]");
             }
-        }
-        if (a2 <= a1 && b2 <= b1) {
-            if (a1 < b2) {
-                System.out.println("Координаты отрезка пересечения [" + a1 + ";" + b2 + "]");
-            }
-            if (a1 == b2) {
-                System.out.println("Точка пересечения отрезков " + a1);
-            }
-            if (b2 < a1) {
-                System.out.println("Отрезки не пересекаются");
-            }
-        } else {
-            if (a2 < a1 && b1 < b2) {
-                System.out.println("Координаты отрезка пересечения [" + a1 + ";" + b1 + "]");
+            if (a2 <= a1 && b2 <= b1) {
+                if (a1 < b2) {
+                    System.out.println("Координаты отрезка пересечения [" + a1 + ";" + b2 + "]");
+                }
+                if (a1 == b2) {
+                    System.out.println("Точка пересечения отрезков " + a1);
+                }
+                if (b2 < a1) {
+                    System.out.println("Отрезки не пересекаются");
+                }
+            } else {
+                if (a2 < a1 && b1 < b2) {
+                    System.out.println("Координаты отрезка пересечения [" + a1 + ";" + b1 + "]");
+                }
             }
         }
     }
